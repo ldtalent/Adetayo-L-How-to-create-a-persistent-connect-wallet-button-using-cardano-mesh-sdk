@@ -32,13 +32,13 @@ const ConnectWallet = () => {
 		<div className='dropdown'>
 			<div className='dropdown-btn'>
 				{selectedWallet ? (
-					<div>
+					<div className='dropdown-selected'>
 						<span>{selectedWallet.name}</span>
 						<Image
 							src={selectedWallet.icon}
 							alt={selectedWallet.name}
-							width='30'
-							height='30'
+							width='20'
+							height='20'
 						/>
 					</div>
 				) : (
@@ -68,7 +68,7 @@ const ConnectWallet = () => {
 			<>
 				{selectedWallet && (
 					<div className='dropdown-content'>
-						<li onClick={handleDisconnect}>disconnect</li>
+						<li onClick={handleDisconnect}>Disconnect</li>
 					</div>
 				)}
 			</>

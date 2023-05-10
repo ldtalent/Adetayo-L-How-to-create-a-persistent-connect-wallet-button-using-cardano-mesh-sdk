@@ -110,9 +110,16 @@ a {
 .dropdown-btn {
 	background-color: #f1f1f1;
 	color: #333;
-	padding: 10px 20px;
+	padding: 15px 30px;
 	border: none;
 	cursor: pointer;
+	border-radius: 3px;
+}
+
+.dropdown-selected {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 /* Style the dropdown content */
@@ -124,6 +131,7 @@ a {
 	margin: 0; /* Remove any margin to make the dropdown appear directly below the button */
 	border: none;
 	z-index: 1;
+	width: 100%;
 }
 
 /* Show the dropdown content when the button is hovered */
@@ -139,6 +147,9 @@ a {
 	text-decoration: none;
 	list-style: none;
 	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 /* Change the background color of links on hover */
